@@ -8,23 +8,30 @@ import {IForm} from '@/pages/bagiBonus/bagi-bonus';
 import {useNotification} from "@kyvg/vue3-notification";
 import {getBagiBonusById, putBagiBonus} from "@/lib/api.ts";
 import router from "@/router";
-import { useRoute } from 'vue-router';
+import {useRoute} from 'vue-router';
 
 const route = useRoute();
 
 const form = ref<IForm[]>([
-  {
-    id: 1,
-    value: '',
-    label: 'Buruh A',
-    name: 'buruh_a'
-  },
-  {
-    id: 2,
-    value: '',
-    label: 'Buruh B',
-    name: 'buruh_b'
-  }]
+      {
+        id: 1,
+        value: '',
+        label: 'Buruh A',
+        name: 'buruh_a'
+      },
+      {
+        id: 2,
+        value: '',
+        label: 'Buruh B',
+        name: 'buruh_b'
+      },
+      {
+        id: 3,
+        value: '',
+        label: 'Buruh C',
+        name: 'buruh_c'
+      }
+    ]
 );
 const id = route.params.id;
 
